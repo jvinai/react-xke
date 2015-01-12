@@ -1,0 +1,44 @@
+/*
+// App Stylesheet
+// --------------
+*/
+// Import Bootstrap
+@import "../../node_modules/bootstrap/less/bootstrap.less";
+
+// Give the navigation some padding
+.nav {
+  margin: 10px 0;
+
+  // Style the active links
+  a.active {
+    font-weight: bold;
+  }
+}
+
+.box {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  text-align: center;
+  padding-top: 5px;
+  &.false {
+    background-color: #00d6b2;
+  }
+  &.true {
+    background-color: #973634;
+    color: #FFFFFF;
+  }
+}
+
+.user-form {
+  &.false {
+    display: none;
+  }
+  &.true {
+    display: inline-block;
+  }
+}
+.list {
+  display: inline-block;
+}
