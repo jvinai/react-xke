@@ -16,8 +16,8 @@ var UserForm = React.createClass({
       return;
     }
     var nickname = this.refs.nickname.getDOMNode().value;
-    window.dispatchEvent(new CustomEvent('validation_' + this.state.id, {detail: {nickname: this.refs.nickname.getDOMNode().value}}));
-    this.setState({show: false});
+    window.dispatchEvent(new CustomEvent('validation_' + this.state.id, {detail: {nickname: nickname}}));
+    this.replaceState({show: false});
     this.refs.nickname.getDOMNode().value = '';
   },
   render: function () {

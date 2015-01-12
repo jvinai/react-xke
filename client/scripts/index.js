@@ -1,5 +1,4 @@
-var React = require('react'),
-  Router = require('react-router');
+var React = require('react')
 
 var PlaceList = require('../components/PlaceList');
 var UserForm = require('../components/UserForm');

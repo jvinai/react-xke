@@ -15,9 +15,7 @@ module.exports = {
   common: {
     bundle: 'common.js',
     packages: [
-      'bluebird',
-      'react',
-      'react-router'
+      'react'
     ]
   }
 };

@@ -1,4 +1,4 @@
-React = require('react'),
+var React = require('react'),
   PlacesService = require('../services/places.service'),
   PLACES_EVENT = require('../constant/places.constant');
 
