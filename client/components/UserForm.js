@@ -12,10 +12,11 @@ var UserForm = React.createClass({
     });
   },
   validation: function () {
-    if (!this.refs.nickname.getDOMNode().value || this.refs.nickname.getDOMNode().value === '') {
+    var nickname = this.refs.nickname.getDOMNode().value;
+    if (!nickname || nickname === '') {
       return;
     }
-    var nickname = this.refs.nickname.getDOMNode().value;
+
     window.dispatchEvent(new CustomEvent('validation_' + this.state.id, {detail: {nickname: nickname}}));
     this.replaceState({show: false});
     this.refs.nickname.getDOMNode().value = '';

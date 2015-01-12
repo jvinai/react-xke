@@ -1,7 +1,7 @@
-var React = require('react')
+var React = require('react');
 
-var PlaceList = require('../components/PlaceList');
-var UserForm = require('../components/UserForm');
+var PlaceList = require('../components/PlaceList'),
+  UserForm = require('../components/UserForm');
 
 var Header = React.createClass({
   render: function () {
