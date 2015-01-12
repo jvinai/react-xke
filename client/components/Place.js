@@ -3,6 +3,20 @@ var React = require('react');
 var PlaceBox = require('./PlaceBox');
 
 var Place = React.createClass({
+  propTypes: {
+    reservation: React.PropTypes.shape({
+        right: React.PropTypes.shape({
+          nickname: React.PropTypes.string,
+          reserved: React.PropTypes.bool.isRequired
+        }),
+        left: React.PropTypes.shape({
+          nickname: React.PropTypes.string,
+          reserved: React.PropTypes.bool.isRequired
+        })
+    }),
+    name: React.PropTypes.string.isRequired,
+    id: React.PropTypes.string.isRequired
+  },
   getInitialState: function () {
     return {
       nicknameR: this.props.reservation.right.nickname,
